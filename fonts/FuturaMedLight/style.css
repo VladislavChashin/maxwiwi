@@ -1,0 +1,8 @@
+@font-face {
+    font-family: 'FuturaMedLight';
+    src: local('Futura PT Medium Oblique'), local('Futura-PT-Medium-Oblique'),
+        url('FuturaPT-MediumObl.woff2') format('woff2'),
+        url('FuturaPT-MediumObl.woff') format('woff'),
+        url('FuturaPT-MediumObl.ttf') format('truetype');
+    font-style: normal;
+  }

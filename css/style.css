@@ -1,0 +1,139 @@
+@import url("reset.css");
+@import url(/fonts/FuturaBold/style.css);
+@import url(/fonts/FuturaMedium/style.css);
+@import url(/fonts/FuturaMedLight/style.css);
+header {
+  height: 100vh;
+  background: conic-gradient(from 101.86deg at 44.81% 37.73%, #000AFF 0deg, #000000 153.75deg, #000AFF 360deg);
+  border-radius: 0px 0px 50px 50px;
+}
+header .content {
+  max-width: 1512px;
+  padding: 70px 0 0 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: 0 auto;
+}
+header .content .wraper_text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  max-width: 572px;
+}
+header .content .wraper_text .wrap_article {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  max-width: 487px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+header .content .wraper_text p {
+  font-family: "FuturaMedium";
+  font-style: normal;
+  font-size: 22px;
+  line-height: 29px;
+  color: #FFFFFF;
+  padding: 30px 0 0 0;
+}
+header .content .wraper_text h1 {
+  font-family: "FuturaMedium";
+  font-style: normal;
+  font-size: 50px;
+  line-height: 66px;
+  color: #FFFFFF;
+}
+header .content .wraper_text .wrap_button {
+  width: 511px;
+  height: 91px;
+  background: -webkit-gradient(linear, left top, right top, color-stop(61.46%, #FF0000), to(#000AFF));
+  background: linear-gradient(90deg, #FF0000 61.46%, #000AFF 100%);
+  -webkit-box-shadow: inset 0px 0px 10px rgba(0, 0, 0, 0.25);
+          box-shadow: inset 0px 0px 10px rgba(0, 0, 0, 0.25);
+  border-radius: 50px;
+  margin: 38px 0;
+  padding: 0 0 0 2px;
+}
+header .content .wraper_text .wrap_button button {
+  width: 433px;
+  height: 91px;
+  background: -webkit-gradient(linear, left top, right top, color-stop(6.77%, #000AFF), to(#FF0000));
+  background: linear-gradient(90deg, #000AFF 6.77%, #FF0000 100%);
+  -webkit-box-shadow: inset 0px 0px 10px rgba(0, 0, 0, 0.25);
+          box-shadow: inset 0px 0px 10px rgba(0, 0, 0, 0.25);
+  border-radius: 50px;
+  border: solid 0px rgba(0, 0, 0, 0);
+  font-family: "FuturaMedium";
+  font-style: normal;
+  font-size: 25px;
+  line-height: 33px;
+  color: #FFFFFF;
+  padding: 0 80px 0 0;
+}
+header .content .wraper_text .wrap_button button img {
+  padding: 0 20px 0 0;
+}
+header .content .wraper_image {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: column-reverse;
+          flex-direction: column-reverse;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  padding-left: 50px;
+}
+header .content .wraper_image button {
+  width: 382px;
+  height: 59px;
+  background: rgba(255, 255, 255, 0.05);
+  -webkit-box-shadow: 0px 0px 25px rgba(255, 255, 255, 0.25);
+          box-shadow: 0px 0px 25px rgba(255, 255, 255, 0.25);
+  border-radius: 56px;
+  border: solid 0px rgba(0, 0, 0, 0);
+  font-family: "FuturaMedium";
+  font-style: normal;
+  font-size: 20px;
+  line-height: 27px;
+  color: #FFFFFF;
+}
+header .content .wraper_image .image {
+  height: 759px;
+}
+header .content .wraper_image .image img {
+  height: 100%;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+header .icon {
+  max-width: 100px;
+  margin: 0 auto;
+  text-align: center;
+}
+header .icon p {
+  font-family: "FuturaBold";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 15px;
+  line-height: 20px;
+  color: #FFFFFF;
+  margin-top: 5px;
+}
