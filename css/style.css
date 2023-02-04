@@ -2,14 +2,43 @@
 @import url(/fonts/FuturaBold/style.css);
 @import url(/fonts/FuturaMedium/style.css);
 @import url(/fonts/FuturaMedLight/style.css);
+b {
+  font-family: "FuturaBold";
+  font-style: normal;
+  font-weight: 700;
+}
+
+@-webkit-keyframes animated_text {
+  0% {
+    background-position: 0px 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0px 50%;
+  }
+}
+
+@keyframes animated_text {
+  0% {
+    background-position: 0px 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0px 50%;
+  }
+}
 header {
-  height: 100vh;
+  height: 1080px;
   background: conic-gradient(from 101.86deg at 44.81% 37.73%, #000AFF 0deg, #000000 153.75deg, #000AFF 360deg);
   border-radius: 0px 0px 50px 50px;
 }
 header .content {
   max-width: 1512px;
-  padding: 70px 0 0 0;
+  padding: 60px 0 0 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -93,13 +122,13 @@ header .content .wraper_image {
   -webkit-box-direction: reverse;
       -ms-flex-direction: column-reverse;
           flex-direction: column-reverse;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   -webkit-box-align: end;
       -ms-flex-align: end;
           align-items: flex-end;
-  padding-left: 50px;
+  padding: 0 30px 0 50px;
 }
 header .content .wraper_image button {
   width: 382px;
@@ -116,12 +145,15 @@ header .content .wraper_image button {
   color: #FFFFFF;
 }
 header .content .wraper_image .image {
-  height: 759px;
+  max-height: 759px;
+  -ms-flex-negative: 10;
+      flex-shrink: 10;
 }
 header .content .wraper_image .image img {
-  height: 100%;
   background-repeat: no-repeat;
-  background-size: contain;
+  background-size: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 header .icon {
   max-width: 100px;
@@ -136,4 +168,116 @@ header .icon p {
   line-height: 20px;
   color: #FFFFFF;
   margin-top: 5px;
+}
+
+main .about {
+  width: 100%;
+  height: 982px;
+  background: conic-gradient(from 180deg at 50% 73.98%, #0029FF 0deg, #00DFFF 71.17deg, #CD57EB 112.5deg, #FF00B8 200.57deg, #7593FF 288.75deg, #0029FF 360deg);
+  background-size: cover;
+  -webkit-box-shadow: inset 0px 0px 25px rgba(0, 0, 0, 0.05);
+          box-shadow: inset 0px 0px 25px rgba(0, 0, 0, 0.05);
+  border-radius: 0 0 100% 100%;
+}
+main .about .content {
+  padding-top: 100px;
+  max-width: 1332px;
+  width: 100%;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+main .about .content h3 {
+  -webkit-writing-mode: vertical-rl;
+      -ms-writing-mode: tb-rl;
+          writing-mode: vertical-rl;
+  text-align: center;
+  font-family: "FuturaMedium";
+  font-weight: 500;
+  font-size: 50px;
+  font-style: normal;
+  line-height: 95%;
+  background: linear-gradient(350deg, #FF8EF4 38.78%, #00F0FF 100.91%);
+  background-size: 20000%;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  animation: animated_text 5s ease-in-out infinite;
+  -moz-animation: animated_text 5s ease-in-out infinite;
+  -webkit-animation: animated_text 5s ease-in-out infinite;
+}
+main .about .content h3 b {
+  -webkit-text-fill-color: #000000;
+}
+main .about .content h3:nth-child(1) {
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+}
+main .about .content h3:nth-child(1) b {
+  -webkit-text-fill-color: #ffffff;
+}
+main .about .content .content_wraper {
+  max-width: 1010px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+main .about .content .content_wraper .video_wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+main .about .content .content_wraper .video_wrap .wrap {
+  position: relative;
+}
+main .about .content .content_wraper .video_wrap .wrap img {
+  max-width: 220px;
+  max-height: 220px;
+}
+main .about .content .content_wraper .video_wrap .wrap img:nth-child(2) {
+  position: absolute;
+  right: 93px;
+  bottom: 93px;
+}
+main .about .content .content_wraper .text_wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  min-height: 486px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+main .about .content .content_wraper .text_wrap p {
+  margin-top: 50px;
+  text-align: center;
+  font-family: "FuturaMedium";
+  font-style: normal;
+  font-size: 20px;
+  line-height: 27px;
+  text-align: center;
+  color: #FFFFFF;
 }
